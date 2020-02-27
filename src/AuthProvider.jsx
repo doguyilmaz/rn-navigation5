@@ -15,6 +15,7 @@ export const AuthProvider = props => {
 					AsyncStorage.setItem('user', JSON.stringify(fakeUser));
 				},
 				logout: () => {
+					setUser(null);
 					AsyncStorage.removeItem('user');
 				}
 			}}
