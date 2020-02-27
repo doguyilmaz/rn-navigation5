@@ -116,7 +116,7 @@ export const HomeStack = () => {
 						<TouchableOpacity
 							onPress={() => {
 								// Submit form
-								if (route.params.submit) route.params.submit?.current();
+								if (route.params.submit) route.params.submit.current();
 							}}
 							style={{
 								padding: 5,
