@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Button, Text } from 'react-native';
-import { AuthContext } from './AuthProvider';
-import Center from './Center';
+import { AuthContext } from '../Provider/AuthProvider';
+import Center from '../common/Center';
 
 const Login = ({ navigation }) => {
 	const { login } = useContext(AuthContext);

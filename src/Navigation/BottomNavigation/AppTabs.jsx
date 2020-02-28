@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { Text, Button } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Center from './Center';
-import { AuthContext } from './AuthProvider';
+import Center from '../../common/Center';
+import { AuthContext } from '../../Provider/AuthProvider';
+
 import {
 	Ionicons,
 	AntDesign,

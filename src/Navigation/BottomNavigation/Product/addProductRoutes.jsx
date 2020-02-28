@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { TouchableOpacity, Text, Button } from 'react-native';
-import Center from './Center';
+import Center from '../../../common/Center';
+
 const Product = ({ route, navigation }) => {
 	return (
 		<Center>

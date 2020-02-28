@@ -1,10 +1,10 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Center from './Center';
+import Center from '../../common/Center';
 import { Text, TouchableOpacity, FlatList, Button } from 'react-native';
-import { AuthContext } from './AuthProvider';
+import { AuthContext } from '../../Provider/AuthProvider';
 import faker from 'faker';
-import { addProductRoutes } from './addProductRoutes';
+import { addProductRoutes } from './Product/addProductRoutes';
 
 const Stack = createStackNavigator();
 
