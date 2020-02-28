@@ -6,6 +6,7 @@ import { AppTabs } from './Navigation/BottomNavigation/AppTabs';
 import Center from './common/Center';
 import { AuthContext } from './Provider/AuthProvider';
 import { AuthStack } from './Navigation/AuthStack';
+import { DrawerTabs } from './Navigation/DrawerNavigation/DrawerTabs';
 
 export const Routes = () => {
 	const { user, login } = useContext(AuthContext);
@@ -39,7 +40,13 @@ export const Routes = () => {
 
 	return (
 		<NavigationContainer>
-			{user ? <AppTabs /> : <AuthStack />}
+			{user ? (
+				<>
+					<AppTabs />
+				</>
+			) : (
+				<AuthStack />
+			)}
 		</NavigationContainer>
 	);
 };
