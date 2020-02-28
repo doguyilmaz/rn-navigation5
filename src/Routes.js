@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { ActivityIndicator, AsyncStorage } from 'react-native';
+import { AppTabs } from './Navigation/BottomNavigation/AppTabs';
 
-import Center from './Center';
-import { AuthContext } from './AuthProvider';
-import { AppTabs } from './AppTabs';
-import { AuthStack } from './AuthStack';
+import Center from './common/Center';
+import { AuthContext } from './Provider/AuthProvider';
+import { AuthStack } from './Navigation/AuthStack';
 
 export const Routes = () => {
 	const { user, login } = useContext(AuthContext);

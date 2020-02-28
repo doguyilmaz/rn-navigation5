@@ -18,6 +18,6 @@
 // 	}
 // });
 
-import { Providers } from './src/Providers';
+import { Providers } from './src/Provider/Providers';
 
 export default Providers;
