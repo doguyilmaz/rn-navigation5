@@ -11,6 +11,7 @@ import {
 } from '@expo/vector-icons';
 import { HomeStack } from './HomeStack';
 import { SearchStack } from './SearchStack';
+import { DrawerTabs } from '../DrawerNavigation/DrawerTabs';
 
 const Tabs = createBottomTabNavigator();
 
@@ -28,6 +29,8 @@ export const AppTabs = () => {
 					} else if (route.name === 'Search') {
 						iconName = focused ? 'account-search' : 'account-search-outline';
 						// iconName = 'account-search';
+					} else if (route.name === 'Menu') {
+						return <AntDesign name={'menuunfold'} size={size} color={color} />;
 					}
 
 					// You can return any component that you like here!
@@ -43,6 +46,7 @@ export const AppTabs = () => {
 		>
 			<Tabs.Screen name='Home' component={HomeStack} />
 			<Tabs.Screen name='Search' component={SearchStack} />
+			<Tabs.Screen name='Menu' component={DrawerTabs} />
 		</Tabs.Navigator>
 	);
 };
