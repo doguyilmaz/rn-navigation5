@@ -9,16 +9,9 @@ import {
 	MaterialCommunityIcons
 } from '@expo/vector-icons';
 import { HomeStack } from './HomeStack';
+import { SearchStack } from './SearchStack';
 
 const Tabs = createBottomTabNavigator();
-
-const Search = () => {
-	return (
-		<Center>
-			<Text>Search</Text>
-		</Center>
-	);
-};
 
 export const AppTabs = () => {
 	return (
@@ -48,7 +41,7 @@ export const AppTabs = () => {
 			}}
 		>
 			<Tabs.Screen name='Home' component={HomeStack} />
-			<Tabs.Screen name='Search' component={Search} />
+			<Tabs.Screen name='Search' component={SearchStack} />
 		</Tabs.Navigator>
 	);
 };
